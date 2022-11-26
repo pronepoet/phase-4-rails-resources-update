@@ -22,10 +22,12 @@ class BirdsController < ApplicationController
     end
   end
 
+ # PATCH /birds/:id
+
   private
 
   def bird_params
-    params.permit(:name, :species)
+    params.permit(:name, :species, :likes)
   end
 
 end
